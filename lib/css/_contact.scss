@@ -1,0 +1,120 @@
+.contact {
+    padding-bottom: 0 !important;
+    input.form-control {
+        height: 66px;
+    }
+    &-map {
+        .google-map {
+            width: 100%;
+            height: 560PX;
+            margin-top: 60px;
+            @media(min-width: 991px) {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: auto;
+    background: #A4CECC;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 20px 15px;
+    margin: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    p {
+        margin: 0;
+        color: #000;
+        @media(min-width: 768px) and (max-width: 991.98px) {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    @media(max-width:991px) {
+        margin-bottom: 30px;
+    }
+    @media(max-width:576px) {
+        flex-direction: column;
+        .h-border {
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+
+.h-border {
+    height: 77px;
+    border: 1px solid #029E9D;
+}
+
+.contact-icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    a {
+        width: 40px;
+        height: 40px;
+        line-height: 44px;
+        text-align: center;
+        background: #029E9D;
+        border-radius: 50%;
+        display: block;
+        i {
+            font-size: 18px;
+            color: #fff;
+        }
+        @media(min-width:991px) {
+            width: 60px;
+            height: 60px;
+            line-height: 68px;
+            i {
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.contact-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+}
+
+.contact-content {
+    margin-top: 30px !important;
+    @media(min-width: 991px) {
+        margin-top: 70px !important;
+    }
+}
+
+.booking-bg {
+    background: #D6EEED;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+form input.form-control {
+    height: 66px;
+}
+
+.choose-option {
+    width: 100%;
+    border: 1px solid #A4CECC;
+    border-radius: 5px;
+    height: 66px;
+    line-height: 66px;
+    color: #8D8E92;
+    font-size: 16px;
+}

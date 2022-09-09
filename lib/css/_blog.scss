@@ -1,0 +1,412 @@
+.section-spacing.blogs {
+    padding-bottom: 80px;
+    @media(max-width: 991.98px) {
+        padding-bottom: 30px;
+    }
+}
+
+.blogs {
+    .media-icon {
+        background: none;
+        width: auto;
+        height: auto;
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .d-flex {
+        span {
+            font-size: 12px;
+            color: #878787;
+        }
+        h5 {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+        }
+    }
+    .blog-single-author {
+        .d-flex {
+            h5 {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 12px;
+                color: #17233E;
+                padding-bottom: 8px;
+            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .blog-single-title {
+        font-weight: 700;
+        line-height: 34px;
+        color: #17233E;
+    }
+    .blog-single-content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #878787;
+        margin-top: 18px;
+        margin-bottom: 29px;
+    }
+    .text-content {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    .contact-form-wrapper {
+        padding-top: 43px;
+        h3 {
+            color: #17233E;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: bold;
+            font-family: 'Heebo', sans-serif;
+            margin-bottom: 33px;
+        }
+    }
+    .contact-form {
+        margin-left: 0;
+        padding: 30px;
+        input.form-control {
+            height: 66px;
+        }
+    }
+    .maan-coupon-form {
+        margin-top: 0;
+    }
+    .sidebar-widget {
+        padding: 0;
+        margin: 45px 0;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.blog-details-tags-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag-title {
+    color: #17233E;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.blog-details-button {
+    .btn {
+        border-radius: 16px;
+        color: #8D8E92;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+}
+
+.blog-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.tag-title {
+    color: #17233E;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.blog-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    .share-icon a {
+        color: #878787;
+    }
+    hr {
+        width: 100%;
+        height: 1px;
+        color: #E1E1E1;
+        margin: 20px 0;
+    }
+}
+
+.blog-details-reply {
+    margin-top: 40px;
+    h5 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #666;
+        line-height: 28px;
+        margin-bottom: 23px;
+    }
+}
+
+.blog-reply-content {
+    margin: 0 30px 0 81px;
+    h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 16px;
+        color: #878787;
+        font-weight: 300;
+        line-height: 26px;
+        margin-top: 18px;
+        margin-bottom: 0;
+    }
+    // @media(max-width: 768px) {
+    //     margin: 0 81px;
+    // }
+}
+
+.blog-reply-img {
+    width: 62px;
+    height: 62px;
+    float: left;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.blog-single {
+    position: relative;
+    .blog-image {
+        border-radius: 5px;
+        height: 466px;
+        width: 100%;
+        @media(max-width: 767.98px) {
+            height: auto;
+        }
+    }
+    &-author {
+        padding-top: 22px;
+        padding-bottom: 32px;
+        .d-flex {
+            margin: 0;
+            align-items: center;
+        }
+    }
+}
+
+.blog-single-item {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: space-between;
+    .item-img {
+        width: 100%;
+        height: 207px;
+        border-radius: 5px;
+        margin-bottom: 32px;
+    }
+    .single-item-one {
+        p {
+            border-left: 5px solid #029E9D;
+            padding-left: 14px;
+            color: #878787;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+    @media(max-width:576px) {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.blog-right-content {
+    @media(min-width: 320px) and (max-width: 768px) {
+        margin-top: 50px;
+    }
+}
+
+span.tour-duration {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #FDC703;
+    color: #fff;
+    padding: 14px 10px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    i {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+.media-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 58px;
+    background: #029E9D;
+    border-radius: 50%;
+}
+
+.sidebar-search-form {
+    .maan-coupon-form {
+        input {
+            background: #D6EEED;
+            color: #17233E;
+            padding: 0 37px;
+            width: 100%;
+        }
+        button {
+            width: 104px;
+            opacity: 1;
+        }
+    }
+    @media(max-width:767.98px) {
+        margin-top: 60px;
+    }
+}
+
+.sidebar-widget {
+    padding: 20px;
+    margin: 0 0 40px;
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+    h4 {
+        font-size: 18px;
+        line-height: 16px;
+        font-weight: 700;
+        color: #17233E;
+        font-family: 'Heebo';
+        padding: 26px 30px;
+        background-color: #D6EEED;
+        border-radius: 5px 5px 0 0;
+    }
+    li {
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+.list-group {
+    border: 1px solid #E1E1E1;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    li {
+        border: none;
+        border-bottom: 1px dashed #E1E1E1;
+        padding: 13px 0;
+        line-height: 16px;
+        color: #1B2C51;
+    }
+    &.post {
+        padding: 30px;
+    }
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    &.post-item {
+        border: none;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+}
+
+.list-group-img {
+    width: 104px;
+    height: 79px;
+    float: left;
+    margin-right: 12px;
+    flex: 0 0 auto;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+
+.list-group-date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #029E9D;
+}
+
+.list-group-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #1B2C51;
+    margin: 0;
+}
+
+.sidebar-button {
+    border: 1px solid #E1E1E1;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 30px;
+    span {
+        color: #1B2C51;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        background-color: #D6EEED;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+.sidebar-img {
+    border-radius: 5px;
+}
+
+.maan-coupon-form {
+    position: relative;
+    height: 74px;
+    margin-top: 30px;
+    input {
+        font-size: 16px;
+        font-weight: 400;
+        background: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s ease-out;
+        height: 100% !important;
+        color: #B9B9B9;
+    }
+    button {
+        top: 0;
+        right: 0;
+        position: absolute;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        background-color: #029E9D;
+        height: 100%;
+        border-radius: 5px;
+        padding: 10px 25px;
+    }
+}

@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: Abril Fatface;
+    src: url('../font/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+    font-family: Comforter Brush;
+    src: url('../font/ComforterBrush-Regular.ttf');
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('../font/Heebo-VariableFont_wght.ttf');
+}
+
+#worker_1 {
+    display: none
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "tours";
+@import "animation";
+@import "blog";
+@import "contact";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #a3258e;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.g-3,
+.gy-3 {
+    --bs-gutter-y: 1rem;
+}
+
+:root {
+    --primary-color: #029E9D;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes transitionRotate {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-30px) rotate(360deg);
+        transform: translateY(-70px) rotate(180deg);
+    }
+    100% {
+        -webkit-transform: translateY(0) rotate(360deg);
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    25% {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: rgba(2, 158, 157, 0.15);
+        margin: -40px 0 0 -40px
+    }
+    100% {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: rgba(2, 158, 157, 0);
+        margin: -80px 0 0 -80px;
+    }
+}
+
+body {
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Heebo', sans-serif;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    overflow-x: hidden;
+    color: #666;
+}
+
+.ov-hidden {
+    overflow: hidden;
+}
+
+.wrapper {
+    transition: all .25s ease;
+}
+
+.container {
+    @media(min-width: 1200px) {
+        max-width: 1200px;
+    }
+    @media(min-width:768px) and (max-width:991.98px) {
+        max-width: 768px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+ul,
+ol {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    outline: none !important;
+    text-decoration: none;
+}
+
+a {
+    transition: all 0.2s ease-in-out;
+    color: #333;
+}
+
+a:hover {
+    color: #6abe45;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 28px;
+    font-family: 'Abril Fatface', cursive;
+    color: #17233E;
+    @media(max-width: 575.98px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    font-family: 'Abril Fatface', cursive;
+    margin: 0 0 25px;
+    @media(max-width: 575.98px) {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: 'Comforter Brush', cursive;
+    color: #FDC703;
+    line-height: 34px;
+}
+
+h4 {
+    font-size: 26px;
+    color: #FDC703;
+    font-weight: 400;
+    margin: 0 0 0px;
+    font-family: 'Comforter Brush', cursive;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+h6 {
+    font-size: 19px;
+    line-height: 26px;
+    color: #666;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #888;
+    margin: 0 0 25px;
+}
+
+.btn.btn-primary {
+    line-height: 26px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 700;
+    background: var(--primary-color);
+    text-transform: capitalize;
+    opacity: 1;
+    box-shadow: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary.btn-white {
+    color: var(--primary-color);
+    border-color: #fff;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+.btn.btn-primary.learn-more {
+    border: 2px solid #B1B1B1;
+    color: #17233E;
+    background: #FFFFFF;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    color: #029E9D;
+    border-color: #029E9D;
+    background: none;
+}
+
+.btn-primary.learn-more:hover {
+    color: #029E9D;
+    border-color: #029E9D;
+    background: none;
+}
+
+.booking-bt {
+    background: #029E9D;
+    color: #fff;
+    width: 100%;
+    border: 2px solid #029E9D;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    &:hover {
+        background: #fff;
+        color: #029E9D;
+        border: 2px solid #029E9D;
+    }
+}
+
+.section-title {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin: 0 0 70px;
+    h2 {
+        position: relative;
+    }
+    @media(max-width:767.98px) {
+        margin: 0 0 60px;
+    }
+}
+
+.mt-n6 {
+    margin-top: -6px;
+}
+
+.section-spacing {
+    padding: 110px 0;
+    float: left;
+    width: 100%;
+    background-image: url('../../images/bg-graphics.png');
+    background-repeat: no-repeat;
+    background-position: center top 40px;
+    background-size: 100% auto;
+    @media(min-width: 768px) and (max-width: 991.98px) {
+        padding: 60px 0;
+    }
+    @media(max-width:767.98px) {
+        padding: 60px 0;
+    }
+}
+
+.read-more {
+    font-size: 16px;
+    color: #029E9D;
+    font-weight: 600;
+    display: block;
+    text-align: right;
+    &:hover {
+        color: #17233E;
+    }
+}
+
+.faq {
+    padding: 40px 0 0;
+    width: 100%;
+    @media(max-width: 991.98px) {
+        padding-top: 60px;
+    }
+    @media(max-width:767.98px) {
+        padding-top: 30px;
+    }
+}
