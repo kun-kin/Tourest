@@ -836,16 +836,33 @@
             width: auto;
             height: auto;
             margin-left: auto;
+            transition: transform .2s ease-in-out;
         }
         &.collapsed {
-            font-size: 16px;
+            font-size: 18px;
             background: #fff;
             color: #666;
             border: 1px solid #E1E1E1;
             padding-top: 12px;
         }
+        &:not(.collapsed) {
+            &::after {
+                transform: rotate(-180deg);
+            }
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
         @media(max-width:576px) {
             font-size: 14px;
+        }
+    }
+    .collapse {
+        .card-body {
+            padding: 20px 20px 20px 20px;
+            background: #D6EEED;
+            border: 1px solid #A4CECC;
+            color: #666;
+            margin: 0;
         }
     }
 }
